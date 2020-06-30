@@ -1,0 +1,23 @@
+{
+  "name": "node_cluser",
+  "version": "1.0.0",
+  "description": "Node.js Cluster with PM2, RabbitMQ, Redis and Nginx",
+  "main": "./src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatanYemini/node_cluser.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatanYemini/node_cluser/issues"
+  },
+  "homepage": "https://github.com/MatanYemini/node_cluser#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
