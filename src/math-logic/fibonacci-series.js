@@ -2,10 +2,8 @@ class FibonacciSeries {
   constructor() {}
 
   calculateFibonacciValue(number) {
-    let s = 0;
-
-    if (number === 0) return s;
-    else if (number === 1) return (s += 1);
+    if (number === 0) return 0;
+    else if (number === 1) return 1;
     else
       return (
         this.calculateFibonacciValue(number - 1) +
