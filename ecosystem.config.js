@@ -2,9 +2,9 @@ module.exports = {
   apps: [
     {
       name: 'Express App',
-      script: 'server.js',
+      script: './src/server.js',
       instances: 'MAX',
-      autorestart: true,
+      autorestart: false,
       watch: true,
       max_memory_restart: '1G',
       exec_mode: 'cluster',

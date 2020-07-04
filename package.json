@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/MatanYemini/node_cluser#readme",
   "dependencies": {
+    "amqplib": "^0.5.6",
     "express": "^4.17.1"
   }
 }
