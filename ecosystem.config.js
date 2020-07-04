@@ -3,7 +3,7 @@ module.exports = {
     {
       name: 'Express App',
       script: './src/server.js',
-      instances: 'MAX',
+      instances: '2',
       autorestart: false,
       watch: true,
       max_memory_restart: '1G',
@@ -15,17 +15,21 @@ module.exports = {
         NODE_ENV: 'production',
       },
     },
-  ],
-
-  deploy: {
-    production: {
-      user: 'node',
-      host: '212.83.163.1',
-      ref: 'origin/master',
-      repo: 'git@github.com:repo.git',
-      path: '/var/www/production',
-      'post-deploy':
-        'npm install && pm2 reload ecosystem.config.js --env production',
+    {
+      name: 'FirstWorker',
+      script: './src/workers/fib-worker1.js',
+      instances: 1,
+      env: {
+        NODE_ENV='development',
+      }
     },
-  },
+    {
+      name: 'SecondWorker',
+      script: './src/workers/fib-worker2.js',
+      instances: 1,
+      env: {
+        NODE_ENV='development',
+      }
+    },
+  ],
 };
