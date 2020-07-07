@@ -1,7 +1,7 @@
 const express = require('express');
 
-const firstFibQueue = require('./queues/fib-queue1');
-const secondFibQueue = require('./queues/fib-queue2');
+const firstFibQueue = require('../queues/fib-queue1');
+const secondFibQueue = require('../queues/fib-queue2');
 
 const app = express();
 

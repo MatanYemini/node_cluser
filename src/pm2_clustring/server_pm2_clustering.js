@@ -1,5 +1,5 @@
 const express = require('express');
-const fibObj = require('./math-logic/fibonacci-series');
+const fibObj = require('../math-logic/fibonacci-series');
 
 const app = express();
 app.get('/', (req, res) => {

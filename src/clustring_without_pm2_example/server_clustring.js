@@ -1,5 +1,5 @@
 const express = require('express');
-const fabObj = require('./math-logic/fibonacci-series');
+const fabObj = require('../math-logic/fibonacci-series');
 const cluster = require('cluster');
 const totalCpus = require('os').cpus().length;
 
